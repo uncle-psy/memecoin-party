@@ -23,3 +23,6 @@ Research-derived fee percentages and curve targets are configurable product defa
 `node --check app.js`
 
 User-provided branding is in mascot.png. The source research is intentionally excluded from the repository.
+
+## Accounts and internal wallet
+Night mode is the default; explicit theme choices persist. account.js implements example sign-in, account creation, invitation code, a browser-local internal USDC ledger, simulated Stripe checkout and external-wallet funding, and balance-aware trades. PARTY-DEMO is the only invitation code. Email, passwords, card information and wallet keys are neither persisted nor transmitted. The example connector does not call installed providers. Production requires server-side authentication, account isolation, ledger accounting, Stripe/onramp and chain integrations, webhook verification and confirmed settlement.
